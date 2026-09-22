@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anurag Das Mohapatra — Full-Stack &amp; ML Engineer</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background graph canvas -->
+<canvas id="graph-bg"></canvas>
+
+<div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__mark">Anurag Das Mohapatra</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Final-year CS engineer · Bhubaneswar, India</p>
+        <h1 class="hero__title">
+          I build software that<br>
+          <span class="hero__title-accent">works, scales</span><br>
+          and <span class="hero__title-accent2">holds up.</span>
+        </h1>
+        <p class="hero__lede">
+          Anurag Das Mohapatra — Final year student skilled in DSA, full-stack development, and machine learning. University Rank 1 scholar with hands-on experience building 
+scalable, data-driven applications.
+        </p>
+        <div class="hero__roles">
+          <span class="hero__roles-label mono">Open to</span>
+          <div class="tag-row">
+            <span class="tag">Full Stack Engineer</span>
+            <span class="tag">Software Development Engineer</span>
+            <span class="tag">Front End Engineer</span>
+            <span class="tag">Backend Engineer</span>
+            <span class="tag">Cloud Engineer</span>
+            <span class="tag tag--highlight">Internships &amp; Full-time</span>
+          </div>
+        </div>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">See my work</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anuragadm78@gmail.com"
+   target="_blank"
+   class="btn btn--ghost">
+    Get in touch
+          </a>
+        </div>
+        <div class="hero__social" id="heroSocial">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <div class="hero__portrait">
+        <div class="portrait-frame">
+          <img src="assets/profile.jpeg" alt="Portrait of Anurag Das Mohapatra" class="portrait-img">
+          <svg class="portrait-ring" viewBox="0 0 220 220" aria-hidden="true">
+            <circle cx="110" cy="110" r="106" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="section__head">
+      <h2>About</h2>
+      <p class="section__sub">DSA-obsessed, database-fluent, full-stack from the browser to the backend.</p>
+    </div>
+    <div class="about__grid">
+      <p class="about__para">
+        I'm a final-year B.Tech student in Computer Science &amp; Engineering at
+        KIIT University, currently holding a 9.91 CGPA across seven semesters and
+        a University Rank of 1 among 3,616 students. My work sits at the
+        intersection of full-stack development, databases and backend systems,
+        and applied machine learning — from writing SQL and PL/SQL against
+        real schemas, to shipping React/Node.js features, to building
+        end-to-end platforms like a six-layer traffic-intelligence system that
+        fuses computer vision, NLP and graph routing.
+      </p>
+      <p class="about__para">
+        I've interned as a Software Engineer at Assurant and Bluestock Fintech,
+        shipping production features across SQL, React, Node.js, Express.js and
+        Azure, and working with cross-functional teams to track down and fix
+        real bugs. Outside of coursework, I'm a six-time college topper on
+        Coding Ninjas Code360 and a LeetCode Guardian in the top 2% globally
+        with 750+ problems solved.
+      </p>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__num" data-count="9.91">0</span>
+          <span class="stat__label">CGPA / 10</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="750" data-suffix="+">0</span>
+          <span class="stat__label">LeetCode solved</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="3616" data-prefix="1/">0</span>
+          <span class="stat__label">University rank</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="8">0</span>
+          <span class="stat__label">Certifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section work" id="work">
+    <div class="section__head">
+      <h2>Experience</h2>
+      <p class="section__sub">Two internships spent shipping features, chasing down bugs, and working the full dev lifecycle.</p>
+    </div>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__date mono">May 2026 — Jul 2026</div>
+        <div class="timeline__body">
+          <h3>SWE Intern · Assurant</h3>
+          <p>
+            Supported scalable applications using SQL, Node.js, Express.js, React
+            and Azure, contributing to 5+ application features across the full
+            development lifecycle. Collaborated with cross-functional teams to
+            resolve 10+ development issues, improving application functionality
+            and delivery reliability.
+          </p>
+          <div class="tag-row">
+            <span class="tag">SQL</span><span class="tag">Node.js</span>
+            <span class="tag">Express.js</span><span class="tag">React</span>
+            <span class="tag">Azure</span>
+          </div>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__date mono">May 2025 — Jun 2025</div>
+        <div class="timeline__body">
+          <h3>SDE Intern · Bluestock Fintech</h3>
+          <p>
+            Developed an IPO web application using React, JavaScript, HTML, CSS
+            and Bootstrap — building 10+ reusable UI components and shipping 6+
+            front-end features into a live fintech product.
+          </p>
+          <div class="tag-row">
+            <span class="tag">React</span><span class="tag">JavaScript</span>
+            <span class="tag">Bootstrap</span><span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="section__head">
+      <h2>Projects</h2>
+      <p class="section__sub">Three builds, three different muscles: intelligent systems, front-end craft, and full-stack ownership.</p>
+    </div>
+
+    <article class="project project--feature">
+      <div class="project__info">
+        <span class="project__index mono">Featured</span>
+        <h3>TraffIQ</h3>
+        <p class="project__tagline">AI-powered traffic intelligence platform</p>
+        <p class="project__desc">
+          A six-layer intelligent traffic-management platform integrating YOLOv11
+          and DeepSORT for vehicle detection and queue estimation, a fine-tuned
+          BERT model across 5+ disruption categories, digital twins simulating
+          15/30/60-minute horizons, and graph-based routing for adaptive traffic
+          allocation.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">OpenCV</span>
+          <span class="tag">Scikit-learn</span><span class="tag">NetworkX</span>
+        </div>
+      </div>
+      <div class="project__visual" id="trafficViz" aria-hidden="true"></div>
+    </article>
+
+    <div class="project-grid">
+      <article class="project project--card">
+        <span class="project__index mono">02</span>
+        <h3>Myntra</h3>
+        <p class="project__tagline">Frontend e-commerce application</p>
+        <p class="project__desc">
+          A responsive Myntra-inspired storefront with 20+ product listings,
+          API-based data fetching and shopping-bag management. Reusable React
+          components with Redux Toolkit driving dynamic bag updates, price
+          calculation and item removal.
+        </p>
+        <div class="tag-row">
+          <span class="tag">React.js</span><span class="tag">Redux Toolkit</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </article>
+
+      <article class="project project--card">
+        <span class="project__index mono">03</span>
+        <h3>Airbnb</h3>
+        <p class="project__tagline">Full-stack property platform</p>
+        <p class="project__desc">
+          A full-stack rental platform with 7+ features — authentication,
+          session authorization, property browsing, host management, CRUD,
+          favourites and image uploads — on a server-rendered EJS UI.
+        </p>
+        <div class="tag-row">
+          <span class="tag">MongoDB</span><span class="tag">Mongoose</span>
+          <span class="tag">Express.js</span><span class="tag">Node.js</span>
+          <span class="tag">EJS</span><span class="tag">Multer</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="section__head">
+      <h2>Skills</h2>
+      <p class="section__sub">Languages, Frameworks & Fundamentals — My core technical toolkit.</p>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-group">
+        <h3 class="mono">Languages</h3>
+        <div class="tag-row">
+          <span class="tag">C</span><span class="tag">C++</span><span class="tag">C#</span>
+          <span class="tag">Java</span><span class="tag">Python</span>
+          <span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Frameworks</h3>
+        <div class="tag-row">
+          <span class="tag">React.js</span><span class="tag">Angular</span><span class="tag">Mongoose</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">Bootstrap</span><span class="tag">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Databases</h3>
+        <div class="tag-row">
+          <span class="tag">SQL</span><span class="tag">PL/SQL</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Cloud &amp; tools</h3>
+        <div class="tag-row">
+          <span class="tag">Git</span><span class="tag">GitHub</span>
+          <span class="tag">VS Code</span><span class="tag">AWS</span><span class="tag">Azure</span>
+        </div>
+      </div>
+      <div class="skill-group skill-group--wide">
+        <h3 class="mono">Core concepts</h3>
+        <div class="tag-row">
+          <span class="tag">Data Structures</span><span class="tag">Algorithms</span>
+          <span class="tag">Operating Systems</span><span class="tag">DBMS</span>
+          <span class="tag">OOP</span><span class="tag">AI</span><span class="tag">ML</span>
+          <span class="tag">Computer Networks</span><span class="tag">Data Mining</span>
+          <span class="tag">Computer Architecture</span><span class="tag">Cyber Security</span>
+          <span class="tag">Distributed OS</span><span class="tag">Cloud Computing</span>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achievements" id="achievements">
+    <div class="section__head">
+      <h2>Achievements</h2>
+      <p class="section__sub">Rankings, competitions and olympiad medals earned along the way.</p>
+    </div>
+    <div class="ach__grid">
+      <div class="ach__card ach__card--big">
+        <span class="ach__num">1<span class="ach__num-sm">/3616</span></span>
+        <p>University Rank across all CSE batches at KIIT</p>
+      </div>
+      <div class="ach__card">
+        <span class="ach__num">10</span>
+        <p>SGPA in Semesters 1, 5 and 6</p>
+      </div>
+      <div class="ach__card">
+        <span class="ach__num">₹4.8L</span>
+        <p>Merit scholarship from KIIT University</p>
+      </div>
+      <div class="ach__card">
+        <span class="ach__num">Top 2%</span>
+        <p>JEE Advanced — All India Rank 28,821</p>
+      </div>
+      <div class="ach__card">
+        <span class="ach__num">750+</span>
+        <p>LeetCode questions solved — Guardian, top 2%</p>
+      </div>
+      <div class="ach__card">
+        <span class="ach__num">6×</span>
+        <p>College Topper, Coding Ninjas Code360</p>
+      </div>
+      <div class="ach__card ach__card--wide">
+        <p class="ach__list-title">Competitions</p>
+        <div class="tag-row">
+          <span class="tag tag--comp">Cisco Ideathon 2026 — Finalist</span>
+          <span class="tag tag--comp">Flipkart Grid 8.0 — Semi-finalist</span>
+          <span class="tag tag--comp">Tata Imagination Challenge 2025 — Semi-finalist</span>
+          <span class="tag tag--comp">TechNova Season 2 — Semi-finalist</span>
+        </div>
+      </div>
+      <div class="ach__card ach__card--wide">
+        <p class="ach__list-title">Olympiad medals of distinction</p>
+        <div class="tag-row">
+          <span class="tag tag--oly">NSO</span><span class="tag tag--oly">IMO</span><span class="tag tag--oly">IEO</span>
+          <span class="tag tag--oly">IGKO</span><span class="tag tag--oly">ITHO</span><span class="tag tag--oly">NCO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section credentials">
+    <div class="section__head section__head--tight">
+      <h2>Certifications</h2>
+      <p class="section__sub">Cloud, networking and full-stack credentials picked up along the way.</p>
+    </div>
+    <ul class="cert-list">
+      <li>Google AI/ML Virtual Internship</li>
+      <li>IBM Machine Learning</li>
+      <li>IBM Full Stack Software Developer</li>
+      <li>AWS Academy Graduate — Cloud Foundations</li>
+      <li>CCNA — Introduction to Networks</li>
+      <li>CCNA — Switching, Routing &amp; Wireless Essentials</li>
+      <li>CCNA — Enterprise Networking, Security &amp; Automation</li>
+      <li>AZ-900 Microsoft Azure Fundamentals</li>
+    </ul>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section education" id="education">
+    <div class="section__head section__head--tight">
+      <h2>Education</h2>
+      <p class="section__sub">Academic record, from 10th grade through my current B.Tech.</p>
+    </div>
+    <ul class="edu-list">
+      <li>
+        <div class="edu-top">
+          <strong>KIIT University</strong>
+          <span class="mono">2023 — 2027</span>
+        </div>
+        <p>B.Tech, Computer Science &amp; Engineering — CGPA 9.91 (7th semester)</p>
+      </li>
+      <li>
+        <div class="edu-top">
+          <strong>DAV Public School, Chandrasekharpur</strong>
+          <span class="mono">2021 — 2022</span>
+        </div>
+        <p>12th, CBSE — 91.2%</p>
+      </li>
+      <li>
+        <div class="edu-top">
+          <strong>St. Joseph's High School</strong>
+          <span class="mono">2019 — 2020</span>
+        </div>
+        <p>10th, ICSE — 97.2%</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact__inner">
+      <p class="contact__eyebrow">Ideas are easy. Building them well is the fun part.</p>
+      <h2 class="contact__title">Let's build something<br>that holds up.</h2>
+      <div class="contact__actions" id="contactSocial">
+        <!-- filled by JS -->
+      </div>
+      <div class="contact__direct">
+        <span class="contact__direct-label mono">Or reach me directly</span>
+        <div class="contact__direct-row">
+          <a class="direct-btn" href="mailto:anuragadm78@gmail.com">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.4 2H3.6L12 12.5 20.4 6ZM3 8.24V18h18V8.24l-8.4 6.52a1 1 0 0 1-1.2 0L3 8.24Z"/></svg>
+            <span>anuragadm78@gmail.com</span>
+          </a>
+          <a class="direct-btn" href="tel:+919861318284">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+            <span>+91 98613 18284</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="#top" class="footer__top">Back to top ↑</a>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
